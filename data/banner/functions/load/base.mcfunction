@@ -11,21 +11,17 @@ scoreboard players set $5 bn.constants 5
 scoreboard players set $10 bn.constants 10
 scoreboard players set $20 bn.constants 20
 
-# Ensure villagers exist
-# North
-execute positioned 8 -58 -5 run summon villager ~0.2 ~-0.9 ~-0.5 {Silent:1b,Invulnerable:1b,UUID:[I;-607795189,-1430567171,-1813999646,1268173761],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
-execute positioned 8 -58 -5 run summon villager ~-0.2 ~-0.9 ~-0.5 {Silent:1b,Invulnerable:1b,UUID:[I;-2017597218,-1849276994,-2002516019,1062670431],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
+#> Summon Offsets
+#> Facing   1st Villager        2nd Villager
+#  North    ~0.2 ~-0.9 ~-0.5    ~-0.2 ~-0.9 ~-0.5
+#  East     ~-0.5 ~-0.9 ~0.2    ~-0.5 ~-0.9 ~-0.2
+#  South    ~0.2 ~-0.9 ~0.5     ~-0.2 ~-0.9 ~0.5
+#  West     ~0.5 ~-0.9 ~0.2     ~0.5 ~-0.9 ~-0.2
 
-# East
-execute positioned 21 -58 8 run summon villager ~0.5 ~-0.9 ~0.2 {Silent:1b,Invulnerable:1b,UUID:[I;-607795189,-1430567171,-1813999646,1268173762],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
-execute positioned 21 -58 8 run summon villager ~0.5 ~-0.9 ~-0.2 {Silent:1b,Invulnerable:1b,UUID:[I;-2017597218,-1849276994,-2002516019,1062670432],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
+# The Monument
+execute positioned 15 203 6 run summon villager ~0.2 ~-0.9 ~-0.5 {Silent:1b,Invulnerable:1b,UUID:[I; 338261825, -248627052, -1205868560, 172198090],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
+execute positioned 15 203 6 run summon villager ~-0.2 ~-0.9 ~-0.5 {Silent:1b,Invulnerable:1b,UUID:[I; -818525857, -1574286318, -1965160796, 1136995985],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
 
-# South
-execute positioned 8 -58 21 run summon villager ~0.2 ~-0.9 ~0.5 {Silent:1b,Invulnerable:1b,UUID:[I;-607795189,-1430567171,-1813999646,1268173763],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
-execute positioned 8 -58 21 run summon villager ~-0.2 ~-0.9 ~0.5 {Silent:1b,Invulnerable:1b,UUID:[I;-2017597218,-1849276994,-2002516019,1062670433],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
-
-# West
-execute positioned -5 -58 8 run summon villager ~-0.5 ~-0.9 ~0.2 {Silent:1b,Invulnerable:1b,UUID:[I;-607795189,-1430567171,-1813999646,1268173764],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
-execute positioned -5 -58 8 run summon villager ~-0.5 ~-0.9 ~-0.2 {Silent:1b,Invulnerable:1b,UUID:[I;-2017597218,-1849276994,-2002516019,1062670434],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
-
-
+# The Tainted Oasis
+execute positioned -79 168 92 run summon villager ~-0.5 ~-0.9 ~0.2 {Silent:1b,Invulnerable:1b,UUID:[I;-607795189,-1430567171,-1813999646,1268173761],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
+execute positioned -79 168 92 run summon villager ~-0.5 ~-0.9 ~-0.2 {Silent:1b,Invulnerable:1b,UUID:[I;-2017597218,-1849276994,-2002516019,1062670431],NoAI:1b,CanPickUpLoot:0b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:20000000,ShowParticles:0b}],Offers:{}}
