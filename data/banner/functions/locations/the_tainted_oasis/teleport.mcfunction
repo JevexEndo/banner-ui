@@ -1,1 +1,1 @@
-teleport @s -79 168 92 90 0
+teleport @s -79 167 95 0 0
