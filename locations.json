@@ -1,6 +1,7 @@
 [
     {
         "area_name": "Azalea Ruin",
+        "objective": "White Wool",
         "location": "-47 172 18",
         "facing": "south",
         "main_builders": [
@@ -11,6 +12,7 @@
     },
     {
         "area_name": "The Monument",
+        "objective": "",
         "location": "15 203 6",
         "facing": "north",
         "main_builders": [
@@ -24,6 +26,7 @@
     },
     {
         "area_name": "The Tainted Oasis",
+        "objective": "Orange Wool",
         "location": "-79 167 95",
         "facing": "north",
         "main_builders": [

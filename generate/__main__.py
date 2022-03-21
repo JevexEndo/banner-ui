@@ -186,8 +186,11 @@ if __name__ == "__main__":
             title_file.writelines(
                 [
                     'tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}\n',
-                    'tellraw @s {{"text":"{}","color":"#ACFFA6","bold":true,"italic":false}}\n'.format(
-                        location["area_name"]
+                    'tellraw @s {{"text":"{}{}","color":"#ACFFA6","bold":true,"italic":false}}\n'.format(
+                        location["area_name"],
+                        " - " + location["objective"]
+                        if len(location["objective"]) > 0
+                        else "",
                     ),
                     'tellraw @s {"text":" "}\n',
                     'tellraw @s [{{"text":"\\u27a4 Main Builders: ","color":"#ACFFA6","bold":false,"italic":false}},{{"text":"{}","color":"#FFFFFF","bold":false,"italic":false}}]\n'.format(
