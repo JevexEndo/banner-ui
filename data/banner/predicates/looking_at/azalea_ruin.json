@@ -1,31 +1,31 @@
 [
-  {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "player": {
-            "looking_at": {
-              "type": "minecraft:villager",
-              "nbt": "{UUID:[I;1278143526,1323450386,-1854172994,-120571652]}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "player": {
-            "looking_at": {
-              "type": "minecraft:villager",
-              "nbt": "{UUID:[I;-325862411,-401389423,-1525807663,-3376499]}"
-            }
-          }
-        }
-      }
-    ]
-  }
+	{
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"player": {
+						"looking_at": {
+							"type": "minecraft:villager",
+							"nbt": "{UUID:[I;-1924178512,-1728495367,-1635724359,2070690306]}"
+						}
+					}
+				}
+			},
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"player": {
+						"looking_at": {
+							"type": "minecraft:villager",
+							"nbt": "{UUID:[I;-391216553,1285243361,-1594994032,-727065880]}"
+						}
+					}
+				}
+			}
+		]
+	}
 ]

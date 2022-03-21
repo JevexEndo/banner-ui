@@ -1,0 +1,42 @@
+[
+    {
+        "area_name": "Azalea Ruin",
+        "location": "-47 172 18",
+        "facing": "south",
+        "main_builders": [
+            "saihoku_hiroppi"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
+        "area_name": "The Monument",
+        "location": "15 203 6",
+        "facing": "north",
+        "main_builders": [
+            "Dom",
+            "link",
+            "saihoku_hiroppi",
+            "Firestorm"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
+        "area_name": "The Tainted Oasis",
+        "location": "-79 167 95",
+        "facing": "north",
+        "main_builders": [
+            "Jakkaboi",
+            "GianSmile"
+        ],
+        "contributors": [
+            "saihoku_hiroppi",
+            "Sandur_"
+        ],
+        "description": [
+            "A now abandoned town surrounding a beautiful oasis,",
+            "with its water no longer quenching thirst"
+        ]
+    }
+]
