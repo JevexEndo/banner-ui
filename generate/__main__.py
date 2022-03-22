@@ -105,7 +105,7 @@ if __name__ == "__main__":
         "west": ("~0.5 ~-0.9 ~0.2", "~0.5 ~-0.9 ~-0.2", "-90"),
     }
 
-    summon_template = "execute positioned {positioned} run summon minecraft:villager {facing} {{Silent: 1b, Invulnerable: 1b, UUID: {uuid}, NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}}], Offers: {{}}}}\n"
+    summon_template = "execute in {dimension} positioned {positioned} run summon minecraft:villager {facing} {{Silent: 1b, Invulnerable: 1b, UUID: {uuid}, NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}}], Offers: {{}}}}\n"
     banner_template = "execute at {uuid} if entity @s[distance=..10] at @s if predicate banner:looking_at/{area_name} run function banner:locations/{area_name}/title\n"
 
     for index, location in enumerate(locations):
@@ -121,11 +121,13 @@ if __name__ == "__main__":
                         location["area_name"], location["facing"].title()
                     ),
                     summon_template.format(
+                        dimension=location["dimension"],
                         positioned=location["location"],
                         facing=rel_coords[0],
                         uuid=villager_uuids[0].nbt,
                     ),
                     summon_template.format(
+                        dimension=location["dimension"],
                         positioned=location["location"],
                         facing=rel_coords[1],
                         uuid=villager_uuids[1].nbt,
@@ -161,7 +163,8 @@ if __name__ == "__main__":
 
         with open(teleport_mcfunction(file_name), "w") as teleport_file:
             teleport_file.write(
-                "teleport @s {} {} 0\n".format(
+                "execute in {} run teleport @s {} {} 0\n".format(
+                    location["dimension"],
                     location["location"],
                     rel_coords[2],
                 )
