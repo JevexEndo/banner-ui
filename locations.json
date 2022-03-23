@@ -12,6 +12,45 @@
         "description": []
     },
     {
+        "area_name": "Crimson Cast",
+        "objective": "",
+        "dimension": "minecraft:overworld",
+        "location": "14088 92 -2757",
+        "facing": "north",
+        "main_builders": [
+            "Sandur_",
+            "T_jski"
+        ],
+        "contributors": [
+            "Taxes_",
+            "Firestorm256"
+        ],
+        "description": []
+    },
+    {
+        "area_name": "Crystal Dust Quarry",
+        "objective": "Cyan Wool",
+        "dimension": "minecraft:overworld",
+        "location": "-17017 156 11068",
+        "facing": "east",
+        "main_builders": [
+            "GarfieldRules",
+            "Skriff",
+            "CooleyBrekka"
+        ],
+        "contributors": [
+            "Compsogbrickus",
+            "Forite",
+            "Jakkaboi",
+            "_link_2012_"
+        ],
+        "description": [
+            "An abandoned dusty, windy, quarry that has been",
+            "invaded by the crystals once mined there.",
+            "Follow the rails to the lost treasure!"
+        ]
+    },
+    {
         "area_name": "The Monument",
         "objective": "",
         "dimension": "minecraft:overworld",
