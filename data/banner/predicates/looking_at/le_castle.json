@@ -1,0 +1,31 @@
+[
+	{
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"player": {
+						"looking_at": {
+							"type": "minecraft:villager",
+							"nbt": "{UUID:[I;1790692836,-626047110,-1554401323,1809367687]}"
+						}
+					}
+				}
+			},
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"player": {
+						"looking_at": {
+							"type": "minecraft:villager",
+							"nbt": "{UUID:[I;-907448995,-632274483,-1277150228,201842431]}"
+						}
+					}
+				}
+			}
+		]
+	}
+]

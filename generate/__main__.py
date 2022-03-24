@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Optional
 
 from generate.mcuuid import MCUUID
 
@@ -48,7 +49,7 @@ def looking_at_json(file_name: str) -> str:
     )
 
 
-def teleport_mcfunction(folder_name: str) -> str:
+def teleport_mcfunction(folder_name: str, teleport_id: Optional[int] = None) -> str:
     file_dir = os.path.join(
         os.getcwd(),
         "data",
@@ -59,7 +60,10 @@ def teleport_mcfunction(folder_name: str) -> str:
     )
     os.makedirs(file_dir, exist_ok=True)
 
-    return os.path.join(file_dir, "teleport.mcfunction")
+    function_name = "teleport{}.mcfunction".format(
+        f"_{teleport_id}" if teleport_id is not None else ""
+    )
+    return os.path.join(file_dir, function_name)
 
 
 def title_mcfunction(folder_name: str) -> str:
@@ -98,7 +102,7 @@ if __name__ == "__main__":
     with open("locations.json") as json_file:
         locations = json.load(json_file)
 
-    facing_coords = {
+    facing_adjustments = {
         "north": ("~0.2 ~-0.9 ~0.5", "~-0.2 ~-0.9 ~0.5", "0"),
         "east": ("~-0.5 ~-0.9 ~0.2", "~-0.5 ~-0.9 ~-0.2", "90"),
         "south": ("~0.2 ~-0.9 ~-0.5", "~-0.2 ~-0.9 ~-0.5", "-180"),
@@ -109,66 +113,87 @@ if __name__ == "__main__":
     banner_template = "execute at {uuid} if entity @s[distance=..10] at @s if predicate banner:looking_at/{area_name} run function banner:locations/{area_name}/title\n"
 
     for index, location in enumerate(locations):
-        file_name: str = location["area_name"].lower().replace(" ", "_")
-        rel_coords = facing_coords.get(location["facing"])
-        villager_uuids = [MCUUID(), MCUUID()]
+        file_name: str = (
+            "".join(
+                char for char in location["area_name"] if char.isalnum() or char == " "
+            )
+            .lower()
+            .replace(" ", "_")
+        )
+        villager_uuids = [MCUUID() for _ in range(len(location["banners"]) * 2)]
 
         with open(summon_mcfunction(), "w" if index == 0 else "a") as summon_file:
             summon_file.writelines(
                 [
                     "" if index == 0 else "\n",
-                    "# {} [{}]\n".format(
-                        location["area_name"], location["facing"].title()
-                    ),
-                    summon_template.format(
-                        dimension=location["dimension"],
-                        positioned=location["location"],
-                        facing=rel_coords[0],
-                        uuid=villager_uuids[0].nbt,
-                    ),
-                    summon_template.format(
-                        dimension=location["dimension"],
-                        positioned=location["location"],
-                        facing=rel_coords[1],
-                        uuid=villager_uuids[1].nbt,
-                    ),
+                    "# {}\n".format(location["area_name"]),
                 ]
             )
+
+            for count, banner in enumerate(location["banners"]):
+                rel_coords = facing_adjustments.get(banner["facing"])
+                summon_file.writelines(
+                    [
+                        summon_template.format(
+                            dimension=banner["dimension"],
+                            positioned=banner["coordinates"],
+                            facing=rel_coords[0],
+                            uuid=villager_uuids[count * 2].nbt,
+                        ),
+                        summon_template.format(
+                            dimension=banner["dimension"],
+                            positioned=banner["coordinates"],
+                            facing=rel_coords[1],
+                            uuid=villager_uuids[count * 2 + 1].nbt,
+                        ),
+                    ]
+                )
 
         with open(resummon_mcfunction(), "w" if index == 0 else "a") as summon_file:
             summon_file.writelines(
                 [
                     "" if index == 0 else "\n",
                     "# {}\n".format(location["area_name"]),
-                    "kill {}\n".format(str(villager_uuids[0])),
-                    "kill {}\n".format(str(villager_uuids[1])),
                 ]
             )
 
-        with open(banners_mcfunction(), "w" if index == 0 else "a") as banner_file:
-            banner_file.write(
-                banner_template.format(
-                    area_name=file_name,
-                    uuid=str(villager_uuids[0]),
+            for count, banner in enumerate(location["banners"]):
+                summon_file.writelines(
+                    [
+                        "kill {}\n".format(str(villager_uuids[count * 2])),
+                        "kill {}\n".format(str(villager_uuids[count * 2 + 1])),
+                    ]
                 )
-            )
+
+        with open(banners_mcfunction(), "w" if index == 0 else "a") as banner_file:
+            for count, banner in enumerate(location["banners"]):
+                banner_file.write(
+                    banner_template.format(
+                        area_name=file_name,
+                        uuid=str(villager_uuids[count * 2]),
+                    )
+                )
 
         with open(looking_at_json(file_name), "w") as looking_at_file:
-            looking_at_file.write(
-                looking_at_predicate(
-                    villager_uuids[0].nbt,
-                    villager_uuids[1].nbt,
+            for count, banner in enumerate(location["banners"]):
+                looking_at_file.write(
+                    looking_at_predicate(
+                        villager_uuids[count * 2].nbt,
+                        villager_uuids[count * 2 + 1].nbt,
+                    )
                 )
-            )
 
-        with open(teleport_mcfunction(file_name), "w") as teleport_file:
-            teleport_file.write(
-                "execute in {} run teleport @s {} {} 0\n".format(
-                    location["dimension"],
-                    location["location"],
-                    rel_coords[2],
+        for count, banner in enumerate(location["banners"]):
+            tpid = count + 1 if len(location["banners"]) > 1 else None
+
+            with open(teleport_mcfunction(file_name, tpid), "w") as teleport_file:
+                teleport_file.write(
+                    "execute in {} run teleport @s {} {} 0\n".format(
+                        banner["dimension"],
+                        banner["coordinates"],
+                        facing_adjustments.get(banner["facing"])[2],
+                    )
                 )
-            )
 
         with open(title_mcfunction(file_name), "w") as title_file:
             title_file.writelines(
@@ -196,10 +221,10 @@ if __name__ == "__main__":
                         else "",
                     ),
                     'tellraw @s {"text":" "}\n',
-                    'tellraw @s [{{"text":"\\u27a4 Main Builders: ","color":"#ACFFA6","bold":false,"italic":false}},{{"text":"{}","color":"#FFFFFF","bold":false,"italic":false}}]\n'.format(
-                        ", ".join(location["main_builders"])
+                    'tellraw @s [{{"text":"\\u27a4 Creators: ","color":"#ACFFA6","bold":false,"italic":false}},{{"text":"{}","color":"#FFFFFF","bold":false,"italic":false}}]\n'.format(
+                        ", ".join(location["creators"])
                     )
-                    if len(location["main_builders"]) > 0
+                    if len(location["creators"]) > 0
                     else 'tellraw @s {"text":" "}\n',
                     'tellraw @s [{{"text":"\\u27a4 Contributors: ","color":"#ACFFA6","bold":false,"italic":false}},{{"text":"{}","color":"#FFFFFF","bold":false,"italic":false}}]\n'.format(
                         ", ".join(location["contributors"])

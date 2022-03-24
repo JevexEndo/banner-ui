@@ -1,39 +1,229 @@
 [
     {
+        "area_name": "The Monument",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "15 203 6",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "DoM",
+            "_link_2012_",
+            "saihoku_hiroppi",
+            "Firestorm"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
         "area_name": "Azalea Ruin",
         "objective": "White Wool",
-        "dimension": "minecraft:overworld",
-        "location": "-47 172 18",
-        "facing": "south",
-        "main_builders": [
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-47 172 18",
+                "facing": "south"
+            }
+        ],
+        "creators": [
             "saihoku_hiroppi"
         ],
         "contributors": [],
         "description": []
     },
     {
-        "area_name": "Crimson Cast",
-        "objective": "",
-        "dimension": "minecraft:overworld",
-        "location": "14088 92 -2757",
-        "facing": "north",
-        "main_builders": [
-            "Sandur_",
-            "T_jski"
+        "area_name": "The Tainted Oasis",
+        "objective": "Orange Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-79 167 95",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "Jakkaboi",
+            "GianSmile"
         ],
         "contributors": [
-            "Taxes_",
-            "Firestorm256"
+            "saihoku_hiroppi",
+            "Sandur_"
+        ],
+        "description": [
+            "A now abandoned town surrounding a beautiful oasis,",
+            "with its water no longer quenching thirst"
+        ]
+    },
+    {
+        "area_name": "Frozen Arches",
+        "objective": "Magenta Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-123 123 -71",
+                "facing": "south"
+            }
+        ],
+        "creators": [
+            "PK_Deer",
+            "Skriff_"
+        ],
+        "contributors": [
+            "GarfieldRules",
+            "[Anonymous]"
+        ],
+        "description": [
+            "A magical frozen forest where ice wizards come to",
+            "practice, forming the arches as time went on. The",
+            "magic's source, a frostbound lake, is very protected."
+        ]
+    },
+    {
+        "area_name": "Misty Descent",
+        "objective": "Light Blue Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-126 122 -57",
+                "facing": "north"
+            },
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-155 118 -73",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "GeoCobra",
+            "Asometric"
+        ],
+        "contributors": [
+            "Cafeslayeur",
+            "WizzarD_",
+            "Asometric",
+            "Deripy"
+        ],
+        "description": [
+            "A strange atmosphere surrounds this deserted village.",
+            "Witches and spectres alike live here, defending the",
+            "entrance to a mysterious temple."
+        ]
+    },
+    {
+        "area_name": "Mycelial Badlands",
+        "objective": "Yellow Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-73 67 36",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "sw3aterCS",
+            "Tris_"
+        ],
+        "contributors": [
+            "PK_Deer",
+            "atlas8"
+        ],
+        "description": []
+    },
+    {
+        "area_name": "Chantry of the Singularity",
+        "objective": "Lime Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "111 50 -37",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "Rodogorgon",
+            "SuperKirbyMaster"
+        ],
+        "contributors": [],
+        "description": [
+            "A spooky ritual ground which has brought more than",
+            "what the summoners bargained for."
+        ]
+    },
+    {
+        "area_name": "Tropical Trials",
+        "objective": "Pink Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-16972 183 10884",
+                "facing": "east"
+            }
+        ],
+        "creators": [
+            "Firestorm",
+            "Forite",
+            "ZungryWare"
+        ],
+        "contributors": [],
+        "description": [
+            "A tropical alcove which seems like paradise, until",
+            "you notice the infestations and floating ruins..."
+        ]
+    },
+    {
+        "area_name": "Celestial Archipelago",
+        "objective": "Grey Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-16990 164 10959",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "Cafeslayeur"
+        ],
+        "contributors": [
+            "PK_Deer",
+            "saihoku_hiroppi"
+        ],
+        "description": [
+            "Peaceful floating islands that have been devoured by nature."
+        ]
+    },
+    {
+        "area_name": "Ice Route",
+        "objective": "Light Grey Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-17060 179 10963",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "NotCango",
+            "Sequex"
+        ],
+        "contributors": [
+            "Cafrslayeur"
         ],
         "description": []
     },
     {
         "area_name": "Crystal Dust Quarry",
         "objective": "Cyan Wool",
-        "dimension": "minecraft:overworld",
-        "location": "-17017 156 11068",
-        "facing": "east",
-        "main_builders": [
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-17017 156 11068",
+                "facing": "east"
+            }
+        ],
+        "creators": [
             "GarfieldRules",
             "Skriff",
             "CooleyBrekka"
@@ -51,37 +241,154 @@
         ]
     },
     {
-        "area_name": "The Monument",
-        "objective": "",
-        "dimension": "minecraft:overworld",
-        "location": "15 203 6",
-        "facing": "north",
-        "main_builders": [
-            "DoM",
-            "_link_2012_",
-            "saihoku_hiroppi",
-            "Firestorm"
+        "area_name": "Jester's Mirage",
+        "objective": "Blue Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "14073 120 -3008",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "128_Nyki"
+        ],
+        "contributors": [
+            "6_Black_Bird_6"
+        ],
+        "description": [
+            "The circus has come into town! Come on in to win",
+            "a prize... if you're still alive by then!"
+        ]
+    },
+    {
+        "area_name": "The Starved Ruins",
+        "objective": "Brown Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "13854 83 -3066",
+                "facing": "south"
+            }
+        ],
+        "creators": [
+            "Zucth"
         ],
         "contributors": [],
+        "description": [
+            "A cursed wasteland above ground, and dangerous",
+            "ravines underground. Those inside who starved",
+            "wait for a visitor to set them free."
+        ]
+    },
+    {
+        "area_name": "Le Castle",
+        "objective": "Green Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "13965 103 -2974",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "Kunii_",
+            "Vehudur",
+            "Jakkaboi",
+            "Taxes_",
+            "6_Black_Bird_6",
+            "atlas8_",
+            "silvervalley",
+            "PearUhDox",
+            "Compsogbrickus"
+        ],
+        "contributors": [],
+        "description": [
+            "A cursed wasteland above ground, and dangerous",
+            "ravines underground. Those inside who starved",
+            "wait for a visitor to set them free."
+        ]
+    },
+    {
+        "area_name": "Cyberlight Citadel",
+        "objective": "Red Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "13851 94 -2914",
+                "facing": "east"
+            }
+        ],
+        "creators": [
+            "NotCango",
+            "saihoku_hiroppi"
+        ],
+        "contributors": [
+            "kembo_38",
+            "kit_nats",
+            "Qwublington",
+            "Jakkaboi"
+        ],
         "description": []
     },
     {
-        "area_name": "The Tainted Oasis",
-        "objective": "Orange Wool",
-        "dimension": "minecraft:overworld",
-        "location": "-79 167 95",
-        "facing": "north",
-        "main_builders": [
-            "Jakkaboi",
-            "GianSmile"
+        "area_name": "Prism Caves",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-9 121 61",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "NotCango",
+            "DoM"
         ],
         "contributors": [
-            "saihoku_hiroppi",
-            "Sandur_"
+            "Firestorm256",
+            "BSM"
         ],
-        "description": [
-            "A now abandoned town surrounding a beautiful oasis,",
-            "with its water no longer quenching thirst"
-        ]
+        "description": []
+    },
+    {
+        "area_name": "Basalt Fields",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "13994 89 -3060",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "NotCango",
+            "Asometric"
+        ],
+        "contributors": [
+            "Zucth",
+            "Taxes_"
+        ],
+        "description": []
+    },
+    {
+        "area_name": "Crimson Cast",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "14088 92 -2757",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "Sandur_",
+            "T_jski"
+        ],
+        "contributors": [
+            "Taxes_",
+            "Firestorm256"
+        ],
+        "description": []
     }
 ]
