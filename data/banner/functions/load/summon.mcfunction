@@ -49,8 +49,8 @@ execute in minecraft:overworld positioned 14073 120 -3008 run summon minecraft:v
 execute in minecraft:overworld positioned 14073 120 -3008 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-972105127,767968503,-1813422010,-2075723599], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # The Starved Ruins
-execute in minecraft:overworld positioned 13854 83 -3066 run summon minecraft:villager ~0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;892150522,1884179517,-1917395444,518334445], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:overworld positioned 13854 83 -3066 run summon minecraft:villager ~-0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-245148534,-1364900531,-1090120888,248450525], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 13854 82 -3066 run summon minecraft:villager ~0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;892150522,1884179517,-1917395444,518334445], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 13854 82 -3066 run summon minecraft:villager ~-0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-245148534,-1364900531,-1090120888,248450525], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # Le Castle
 execute in minecraft:overworld positioned 13965 103 -2974 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;1790692836,-626047110,-1554401323,1809367687], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}

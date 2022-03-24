@@ -1,1 +1,1 @@
-execute in minecraft:overworld run teleport @s 13854 83 -3066 -180 0
+execute in minecraft:overworld run teleport @s 13854 82 -3066 -180 0
