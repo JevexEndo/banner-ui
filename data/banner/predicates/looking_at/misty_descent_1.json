@@ -9,36 +9,6 @@
 					"player": {
 						"looking_at": {
 							"type": "minecraft:villager",
-							"nbt": "{UUID:[I;-2021799880,-916633814,-1647668836,160711139]}"
-						}
-					}
-				}
-			},
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"player": {
-						"looking_at": {
-							"type": "minecraft:villager",
-							"nbt": "{UUID:[I;-1749993132,-1720695099,-1535047688,8222245]}"
-						}
-					}
-				}
-			}
-		]
-	}
-][
-	{
-		"condition": "minecraft:alternative",
-		"terms": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"player": {
-						"looking_at": {
-							"type": "minecraft:villager",
 							"nbt": "{UUID:[I;-1453941770,634933010,-1709209351,-430254169]}"
 						}
 					}

@@ -1,5 +1,23 @@
 [
     {
+        "area_name": "The Escape",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:the_end",
+                "coordinates": "-32 46 -38",
+                "facing": "south"
+            }
+        ],
+        "creators": [
+            "???"
+        ],
+        "contributors": [],
+        "description": [
+            "The start of it all..."
+        ]
+    },
+    {
         "area_name": "The Monument",
         "objective": "",
         "banners": [
@@ -50,7 +68,8 @@
         ],
         "contributors": [
             "saihoku_hiroppi",
-            "Sandur_"
+            "Sandur_",
+            "CooleyBrekka"
         ],
         "description": [
             "A now abandoned town surrounding a beautiful oasis,",
@@ -72,8 +91,7 @@
             "Skriff_"
         ],
         "contributors": [
-            "GarfieldRules",
-            "[Anonymous]"
+            "GarfieldRules"
         ],
         "description": [
             "A magical frozen forest where ice wizards come to",
@@ -200,8 +218,8 @@
         "banners": [
             {
                 "dimension": "minecraft:overworld",
-                "coordinates": "-17060 179 10963",
-                "facing": "west"
+                "coordinates": "-17060 179 10962",
+                "facing": "north"
             }
         ],
         "creators": [
@@ -241,6 +259,34 @@
         ]
     },
     {
+        "area_name": "The Shrieking Mists",
+        "objective": "Purple Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:the_nether",
+                "coordinates": "3 108 -3",
+                "facing": "west"
+            },
+            {
+                "dimension": "minecraft:the_nether",
+                "coordinates": "3 108 0",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "GavstarB"
+        ],
+        "contributors": [
+            "_link_2012_",
+            "Adri"
+        ],
+        "description": [
+            "A great civilization once built these halls, now long",
+            "fallen into ruin. All that is left is the unending",
+            "horde of angry spirits."
+        ]
+    },
+    {
         "area_name": "Jester's Mirage",
         "objective": "Blue Wool",
         "banners": [
@@ -257,8 +303,8 @@
             "6_Black_Bird_6"
         ],
         "description": [
-            "The circus has come into town! Come on in to win",
-            "a prize... if you're still alive by then!"
+            "The circus has come into town! Come on in to win a prize",
+            "...if you're still alive by then!"
         ]
     },
     {
@@ -332,6 +378,22 @@
         "description": []
     },
     {
+        "area_name": "The Abyssal Prison",
+        "objective": "Black Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:the_end",
+                "coordinates": "-146 37 27",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "???"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
         "area_name": "Prism Caves",
         "objective": "",
         "banners": [
@@ -358,7 +420,7 @@
             {
                 "dimension": "minecraft:overworld",
                 "coordinates": "13994 89 -3060",
-                "facing": "west"
+                "facing": "north"
             }
         ],
         "creators": [

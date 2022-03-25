@@ -8,3 +8,4 @@ scoreboard players operation $20t bn.timers %= $20 bn.constants
 
 # Run tick functions on players
 execute as @a run function banner:tick/players
+execute if score $5t bn.timers matches 0 run function banner:tick/particles

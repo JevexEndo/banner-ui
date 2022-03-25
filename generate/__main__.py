@@ -38,6 +38,17 @@ def banners_mcfunction() -> str:
     )
 
 
+def particles_mcfunction() -> str:
+    return os.path.join(
+        os.getcwd(),
+        "data",
+        "banner",
+        "functions",
+        "tick",
+        "particles.mcfunction",
+    )
+
+
 def looking_at_json(file_name: str) -> str:
     return os.path.join(
         os.getcwd(),
@@ -110,7 +121,8 @@ if __name__ == "__main__":
     }
 
     summon_template = "execute in {dimension} positioned {positioned} run summon minecraft:villager {facing} {{Silent: 1b, Invulnerable: 1b, UUID: {uuid}, NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}}], Offers: {{}}}}\n"
-    banner_template = "execute at {uuid} if entity @s[distance=..10] at @s if predicate banner:looking_at/{area_name} run function banner:locations/{area_name}/title\n"
+    banner_template = "execute at {uuid} if entity @s[distance=..10] at @s if predicate banner:looking_at/{area_name_id} run function banner:locations/{area_name}/title\n"
+    particle_template = "execute in {dimension} run particle minecraft:glow {coordinates} 0.2 0.5 0.2 0 1 normal\n"
 
     for index, location in enumerate(locations):
         file_name: str = (
@@ -169,13 +181,34 @@ if __name__ == "__main__":
             for count, banner in enumerate(location["banners"]):
                 banner_file.write(
                     banner_template.format(
+                        area_name_id=f"{file_name}_{count+1}"
+                        if len(location["banners"]) > 1
+                        else file_name,
                         area_name=file_name,
                         uuid=str(villager_uuids[count * 2]),
                     )
                 )
 
-        with open(looking_at_json(file_name), "w") as looking_at_file:
+        with open(particles_mcfunction(), "w" if index == 0 else "a") as particle_file:
             for count, banner in enumerate(location["banners"]):
+                particle_file.write(
+                    particle_template.format(
+                        dimension=banner["dimension"],
+                        coordinates=banner["coordinates"],
+                    )
+                )
+
+        for count, banner in enumerate(location["banners"]):
+            banner_id = count + 1 if len(location["banners"]) > 1 else None
+
+            with open(
+                looking_at_json(
+                    "{}{}".format(
+                        file_name, f"_{banner_id}" if banner_id is not None else ""
+                    )
+                ),
+                "w",
+            ) as looking_at_file:
                 looking_at_file.write(
                     looking_at_predicate(
                         villager_uuids[count * 2].nbt,
@@ -183,10 +216,7 @@ if __name__ == "__main__":
                     )
                 )
 
-        for count, banner in enumerate(location["banners"]):
-            tpid = count + 1 if len(location["banners"]) > 1 else None
-
-            with open(teleport_mcfunction(file_name, tpid), "w") as teleport_file:
+            with open(teleport_mcfunction(file_name, banner_id), "w") as teleport_file:
                 teleport_file.write(
                     "execute in {} run teleport @s {} {} 0\n".format(
                         banner["dimension"],
@@ -231,7 +261,9 @@ if __name__ == "__main__":
                     )
                     if len(location["contributors"]) > 0
                     else 'tellraw @s {"text":" "}\n',
-                    'tellraw @s {"text":" "}\n',
+                    'tellraw @s {"text":" "}\n'
+                    if len(location["creators"]) <= 5
+                    else "",
                     'tellraw @s {{"text":"{}","color":"#FFF4D9","bold":false,"italic":true}}\n'.format(
                         location["description"][0]
                     )
