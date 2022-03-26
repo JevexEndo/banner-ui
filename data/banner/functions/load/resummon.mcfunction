@@ -62,7 +62,7 @@ kill 5ebbf2d3-2eab-4641-9bba-2b4e9439c80d
 kill 9f091122-9020-4d86-b10e-55295e3e1068
 kill b0e5ee7f-62ea-405c-a2c0-4282b3b873f7
 
-# Le Castle
+# Daredevil's Keep
 kill e361ad88-3912-4b9c-b0b4-580a40efd738
 kill 8f368343-7c9d-40e3-aca3-870e5db4f7ca
 
@@ -74,17 +74,25 @@ kill 05118de9-36e4-402b-a11f-02422133be4a
 kill 80a32e17-591b-44e8-b69e-d8441f31a50c
 kill 2b300edf-208e-4673-ac5d-42d76bcfa22b
 
-# Prism Caves
+# Molten Geysers
 kill 25f01aa1-8fa1-4bab-ba2b-ef26c7625d44
 kill f3117af1-52bd-4e0b-b039-26457b4b4d94
 
-# Basalt Fields
+# Mine Field
 kill cd01343b-14fe-42af-b261-e34d7e63b307
 kill 7f641cf4-e2ea-40f9-8b62-bbff43bd796f
 
-# Crimson Cast
+# Prism Caves
 kill 952b8aa1-43f5-46a1-8f95-ff0d793e168c
 kill f797ecdf-23bc-4221-a4c8-7632bc075437
+
+# Basalt Fields
+kill e252848b-f18f-47dd-abb6-b4d31006e926
+kill 35beca5f-d498-4a5a-bb0c-adde59b2bd56
+
+# Crimson Cast
+kill f20b8236-9d48-4848-8aa0-473a6853bd42
+kill 3830aac0-b2b9-4ebe-9b63-f7ff318fec65
 
 # Reload Datapack [5s Delay]
 schedule function banner:load/summon 5s replace

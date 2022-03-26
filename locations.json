@@ -10,7 +10,12 @@
             }
         ],
         "creators": [
-            "???"
+            "Rodogorgon",
+            "Sequex",
+            "Sandur_",
+            "saihoku_hiroppi",
+            "kit_nats",
+            "Sp00xie"
         ],
         "contributors": [],
         "description": [
@@ -69,7 +74,8 @@
         "contributors": [
             "saihoku_hiroppi",
             "Sandur_",
-            "CooleyBrekka"
+            "CooleyBrekka",
+            "_link_2012_"
         ],
         "description": [
             "A now abandoned town surrounding a beautiful oasis,",
@@ -142,7 +148,8 @@
         ],
         "creators": [
             "sw3aterCS",
-            "Tris_"
+            "Tris_",
+            "6_Blackbird_6"
         ],
         "contributors": [
             "PK_Deer",
@@ -244,13 +251,13 @@
         "creators": [
             "GarfieldRules",
             "Skriff",
-            "CooleyBrekka"
+            "CooleyBrekka",
+            "_link_2012_"
         ],
         "contributors": [
             "Compsogbrickus",
             "Forite",
-            "Jakkaboi",
-            "_link_2012_"
+            "Jakkaboi"
         ],
         "description": [
             "An abandoned dusty, windy, quarry that has been",
@@ -328,7 +335,7 @@
         ]
     },
     {
-        "area_name": "Le Castle",
+        "area_name": "Daredevil's Keep",
         "objective": "Green Wool",
         "banners": [
             {
@@ -388,7 +395,43 @@
             }
         ],
         "creators": [
-            "???"
+            "saihoku_hiroppi",
+            "Cafeslayeur",
+            "kit_nats"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
+        "area_name": "Molten Geysers",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "50 196 -84",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "SirTorvic"
+        ],
+        "contributors": [
+            "GavstarB"
+        ],
+        "description": []
+    },
+    {
+        "area_name": "Mine Field",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "76 125 109",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "ZungryWare"
         ],
         "contributors": [],
         "description": []
