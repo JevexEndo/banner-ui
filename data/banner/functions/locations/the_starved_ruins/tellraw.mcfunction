@@ -1,5 +1,5 @@
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
-tellraw @s {"text":"The Starved Ruins - Brown Wool","color":"#ACFFA6","bold":true,"italic":false}
+tellraw @s {"text":"The Starved Ruins - Brown Wool","color":"#958f82","bold":true,"italic":false}
 tellraw @s {"text":" "}
 tellraw @s [{"text":"\u27a4 Creators: ","color":"#ACFFA6","bold":false,"italic":false},{"text":"Zucth","color":"#FFFFFF","bold":false,"italic":false}]
 tellraw @s {"text":" "}

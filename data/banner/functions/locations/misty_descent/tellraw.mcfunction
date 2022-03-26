@@ -1,5 +1,5 @@
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
-tellraw @s {"text":"Misty Descent - Light Blue Wool","color":"#ACFFA6","bold":true,"italic":false}
+tellraw @s {"text":"Misty Descent - Light Blue Wool","color":"#a1fafb","bold":true,"italic":false}
 tellraw @s {"text":" "}
 tellraw @s [{"text":"\u27a4 Creators: ","color":"#ACFFA6","bold":false,"italic":false},{"text":"GeoCobra, Asometric","color":"#FFFFFF","bold":false,"italic":false}]
 tellraw @s [{"text":"\u27a4 Contributors: ","color":"#ACFFA6","bold":false,"italic":false},{"text":"Cafeslayeur, WizzarD_, Asometric, Deripy","color":"#FFFFFF","bold":false,"italic":false}]

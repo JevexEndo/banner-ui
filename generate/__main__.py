@@ -230,8 +230,9 @@ if __name__ == "__main__":
                 [
                     "title @s[scores={bn.title_cooldown=-1}] times 0 5 2\n",
                     'title @s title {"text":""}\n',
-                    'title @s subtitle {{"text":"{}","color":"#ACFFA6","bold":true}}\n'.format(
-                        location["area_name"]
+                    'title @s subtitle {{"text":"{}","color":"{}","bold":true}}\n'.format(
+                        location["area_name"],
+                        location.get("color", "#ACFFA6")
                     ),
                     "execute as @s[scores={{mc.talked_to_villager=1..}}] run function banner:locations/{}/tellraw\n".format(
                         file_name
@@ -244,11 +245,12 @@ if __name__ == "__main__":
             title_file.writelines(
                 [
                     'tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}\n',
-                    'tellraw @s {{"text":"{}{}","color":"#ACFFA6","bold":true,"italic":false}}\n'.format(
+                    'tellraw @s {{"text":"{}{}","color":"{}","bold":true,"italic":false}}\n'.format(
                         location["area_name"],
                         " - " + location["objective"]
                         if len(location["objective"]) > 0
                         else "",
+                        location.get("color", "#ACFFA6")
                     ),
                     'tellraw @s {"text":" "}\n',
                     'tellraw @s [{{"text":"\\u27a4 Creators: ","color":"#ACFFA6","bold":false,"italic":false}},{{"text":"{}","color":"#FFFFFF","bold":false,"italic":false}}]\n'.format(

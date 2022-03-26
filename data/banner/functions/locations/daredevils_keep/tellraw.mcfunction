@@ -1,5 +1,5 @@
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
-tellraw @s {"text":"Daredevil's Keep - Green Wool","color":"#ACFFA6","bold":true,"italic":false}
+tellraw @s {"text":"Daredevil's Keep - Green Wool","color":"#7ca67c","bold":true,"italic":false}
 tellraw @s {"text":" "}
 tellraw @s [{"text":"\u27a4 Creators: ","color":"#ACFFA6","bold":false,"italic":false},{"text":"Kunii_, Vehudur, Jakkaboi, Taxes_, 6_Black_Bird_6, atlas8_, silvervalley, PearUhDox, Compsogbrickus","color":"#FFFFFF","bold":false,"italic":false}]
 tellraw @s {"text":" "}

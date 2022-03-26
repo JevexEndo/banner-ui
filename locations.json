@@ -43,6 +43,7 @@
     },
     {
         "area_name": "Azalea Ruin",
+        "color": "#fdfff4",
         "objective": "White Wool",
         "banners": [
             {
@@ -59,6 +60,7 @@
     },
     {
         "area_name": "The Tainted Oasis",
+        "color": "#edcc95",
         "objective": "Orange Wool",
         "banners": [
             {
@@ -84,6 +86,7 @@
     },
     {
         "area_name": "Frozen Arches",
+        "color": "#f0c4f0",
         "objective": "Magenta Wool",
         "banners": [
             {
@@ -107,6 +110,7 @@
     },
     {
         "area_name": "Misty Descent",
+        "color": "#a1fafb",
         "objective": "Light Blue Wool",
         "banners": [
             {
@@ -138,6 +142,7 @@
     },
     {
         "area_name": "Mycelial Badlands",
+        "color": "#f7f785",
         "objective": "Yellow Wool",
         "banners": [
             {
@@ -159,6 +164,7 @@
     },
     {
         "area_name": "Chantry of the Singularity",
+        "color": "#b9fe97",
         "objective": "Lime Wool",
         "banners": [
             {
@@ -179,6 +185,7 @@
     },
     {
         "area_name": "Tropical Trials",
+        "color": "#ffaeff",
         "objective": "Pink Wool",
         "banners": [
             {
@@ -200,6 +207,7 @@
     },
     {
         "area_name": "Celestial Archipelago",
+        "color": "#8f8e91",
         "objective": "Grey Wool",
         "banners": [
             {
@@ -221,6 +229,7 @@
     },
     {
         "area_name": "Ice Route",
+        "color": "#c7c6c9",
         "objective": "Light Grey Wool",
         "banners": [
             {
@@ -240,6 +249,7 @@
     },
     {
         "area_name": "Crystal Dust Quarry",
+        "color": "#62cfc8",
         "objective": "Cyan Wool",
         "banners": [
             {
@@ -267,6 +277,7 @@
     },
     {
         "area_name": "The Shrieking Mists",
+        "color": "#ae8bbf",
         "objective": "Purple Wool",
         "banners": [
             {
@@ -295,6 +306,7 @@
     },
     {
         "area_name": "Jester's Mirage",
+        "color": "#88a0d4",
         "objective": "Blue Wool",
         "banners": [
             {
@@ -316,6 +328,7 @@
     },
     {
         "area_name": "The Starved Ruins",
+        "color": "#958f82",
         "objective": "Brown Wool",
         "banners": [
             {
@@ -336,6 +349,7 @@
     },
     {
         "area_name": "Daredevil's Keep",
+        "color": "#7ca67c",
         "objective": "Green Wool",
         "banners": [
             {
@@ -364,6 +378,7 @@
     },
     {
         "area_name": "Cyberlight Citadel",
+        "color": "#b56868",
         "objective": "Red Wool",
         "banners": [
             {
@@ -386,6 +401,7 @@
     },
     {
         "area_name": "The Abyssal Prison",
+        "color": "#615959",
         "objective": "Black Wool",
         "banners": [
             {
