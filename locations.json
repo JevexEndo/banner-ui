@@ -409,7 +409,7 @@
             {
                 "dimension": "minecraft:overworld",
                 "coordinates": "50 196 -84",
-                "facing": "west"
+                "facing": "north"
             }
         ],
         "creators": [

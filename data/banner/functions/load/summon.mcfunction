@@ -75,8 +75,8 @@ execute in minecraft:the_end positioned -146 37 27 run summon minecraft:villager
 execute in minecraft:the_end positioned -146 37 27 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;724569823,546195059,-1403174185,1808769579], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # Molten Geysers
-execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;636492449,-1885254741,-1171525850,-949854908], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-216958223,1388137995,-1338431931,2068532628], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;636492449,-1885254741,-1171525850,-949854908], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-216958223,1388137995,-1338431931,2068532628], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # Mine Field
 execute in minecraft:overworld positioned 76 125 109 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-855559109,352207535,-1302207667,2120463111], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
