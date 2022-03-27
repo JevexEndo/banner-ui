@@ -70,15 +70,15 @@ kill 8f368343-7c9d-40e3-aca3-870e5db4f7ca
 kill 4407acfc-0473-4127-be61-dd136cac00c0
 kill 05118de9-36e4-402b-a11f-02422133be4a
 
-# The Abyssal Prison
+# The Inferno Chamber
 kill 80a32e17-591b-44e8-b69e-d8441f31a50c
 kill 2b300edf-208e-4673-ac5d-42d76bcfa22b
 
-# Molten Geysers
+# The Abyssal Prison
 kill 25f01aa1-8fa1-4bab-ba2b-ef26c7625d44
 kill f3117af1-52bd-4e0b-b039-26457b4b4d94
 
-# Mine Field
+# Molten Geysers
 kill cd01343b-14fe-42af-b261-e34d7e63b307
 kill 7f641cf4-e2ea-40f9-8b62-bbff43bd796f
 
@@ -86,13 +86,33 @@ kill 7f641cf4-e2ea-40f9-8b62-bbff43bd796f
 kill 952b8aa1-43f5-46a1-8f95-ff0d793e168c
 kill f797ecdf-23bc-4221-a4c8-7632bc075437
 
-# Basalt Fields
+# Mine Field
 kill e252848b-f18f-47dd-abb6-b4d31006e926
 kill 35beca5f-d498-4a5a-bb0c-adde59b2bd56
 
-# Crimson Cast
+# Magician's Hideaway
 kill f20b8236-9d48-4848-8aa0-473a6853bd42
 kill 3830aac0-b2b9-4ebe-9b63-f7ff318fec65
+
+# Bottomside Lighthouse
+kill aee7d3e1-1b91-40e5-8081-d70f75063b15
+kill ad1e3b45-d87b-4aa0-884f-8d54d8b76d31
+
+# Undermines
+kill 4ac4287c-a8a2-4f0a-9ed0-547a542c5097
+kill 3ca4b8d7-2a94-4502-bc74-f3a252aa0205
+
+# Colorless Land
+kill 5e0bba40-04bd-4937-97bc-39e6bd4ebab6
+kill b51f633b-47cb-4f64-a5ee-4aa2417b434e
+
+# Basalt Fields
+kill 1de61900-6d7b-4066-a683-ac342205d746
+kill 06b19963-7590-4c3c-b5e3-10a55b933cbe
+
+# Crimson Cast
+kill ebf88121-e390-483a-af59-311c35b4bfd1
+kill d8fe6001-217a-4a8f-af5f-e31477485af7
 
 # Reload Datapack [5s Delay]
 schedule function banner:load/summon 5s replace

@@ -19,7 +19,8 @@
         ],
         "contributors": [],
         "description": [
-            "The start of it all..."
+            "You've broken from your shackles, but your journey",
+            "has just begun. Are you ready?"
         ]
     },
     {
@@ -56,7 +57,10 @@
             "saihoku_hiroppi"
         ],
         "contributors": [],
-        "description": []
+        "description": [
+            "Azaleas once thrived in these ancient ruins",
+            "which now house only spirits and the homeless."
+        ]
     },
     {
         "area_name": "The Tainted Oasis",
@@ -81,7 +85,7 @@
         ],
         "description": [
             "A now abandoned town surrounding a beautiful oasis,",
-            "with its water no longer quenching thirst"
+            "with its water no longer quenching thirst..."
         ]
     },
     {
@@ -125,14 +129,14 @@
             }
         ],
         "creators": [
-            "GeoCobra",
-            "Asometric"
+            "GeoCobra"
         ],
         "contributors": [
             "Cafeslayeur",
             "WizzarD_",
-            "Asometric",
-            "Deripy"
+            "Adri",
+            "Deripy",
+            "Skriff_"
         ],
         "description": [
             "A strange atmosphere surrounds this deserted village.",
@@ -160,7 +164,11 @@
             "PK_Deer",
             "atlas8"
         ],
-        "description": []
+        "description": [
+            "A hollow echo of what this mining town used to be.",
+            "The air lays thick over the surface,",
+            "be careful not to disturb it."
+        ]
     },
     {
         "area_name": "Chantry of the Singularity",
@@ -179,8 +187,8 @@
         ],
         "contributors": [],
         "description": [
-            "A spooky ritual ground which has brought more than",
-            "what the summoners bargained for."
+            "In these spooky ritual grounds, the summoners got",
+            "a lot more than what they bargained for..."
         ]
     },
     {
@@ -224,7 +232,8 @@
             "saihoku_hiroppi"
         ],
         "description": [
-            "Peaceful floating islands that have been devoured by nature."
+            "Travel the path throught the peaceful floating islands",
+            "that have been devoured by nature."
         ]
     },
     {
@@ -270,9 +279,9 @@
             "Jakkaboi"
         ],
         "description": [
-            "An abandoned dusty, windy, quarry that has been",
-            "invaded by the crystals once mined there.",
-            "Follow the rails to the lost treasure!"
+            "An abandoned quarry that's been invaded by the",
+            "crystals once mined there. Follow the rails",
+            "and you may find its forgotten treasure!"
         ]
     },
     {
@@ -299,9 +308,8 @@
             "Adri"
         ],
         "description": [
-            "A great civilization once built these halls, now long",
-            "fallen into ruin. All that is left is the unending",
-            "horde of angry spirits."
+            "A great civilisation once built these halls, now all that",
+            "remains in its ruins is the unending horde of angry spirits..."
         ]
     },
     {
@@ -322,8 +330,7 @@
             "6_Black_Bird_6"
         ],
         "description": [
-            "The circus has come into town! Come on in to win a prize",
-            "...if you're still alive by then!"
+            "The old circus wasn't as lost as we thought... or is it?"
         ]
     },
     {
@@ -371,9 +378,8 @@
         ],
         "contributors": [],
         "description": [
-            "A cursed wasteland above ground, and dangerous",
-            "ravines underground. Those inside who starved",
-            "wait for a visitor to set them free."
+            "A long abandoned keep built into a mountain side.",
+            "Do you have the strength to climb to the peak?"
         ]
     },
     {
@@ -397,6 +403,26 @@
             "Qwublington",
             "Jakkaboi"
         ],
+        "description": [
+            "Follow this fantasy-esque to the floating castle. Just be",
+            "ready, it's treasure requires some blood on your sword."
+        ]
+    },
+    {
+        "area_name": "The Inferno Chamber",
+        "color": "#615959",
+        "objective": "Black Wool",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "13914 97 -2771",
+                "facing": "north"
+            }
+        ],
+        "creators": [
+            "DoM"
+        ],
+        "contributors": [],
         "description": []
     },
     {
@@ -416,7 +442,10 @@
             "kit_nats"
         ],
         "contributors": [],
-        "description": []
+        "description": [
+            "Rumor has it that the monster who ran the prison",
+            "has been sealed away. For how long is the question..."
+        ]
     },
     {
         "area_name": "Molten Geysers",
@@ -434,22 +463,6 @@
         "contributors": [
             "GavstarB"
         ],
-        "description": []
-    },
-    {
-        "area_name": "Mine Field",
-        "objective": "",
-        "banners": [
-            {
-                "dimension": "minecraft:overworld",
-                "coordinates": "76 125 109",
-                "facing": "west"
-            }
-        ],
-        "creators": [
-            "ZungryWare"
-        ],
-        "contributors": [],
         "description": []
     },
     {
@@ -471,6 +484,99 @@
             "BSM"
         ],
         "description": []
+    },
+    {
+        "area_name": "Mine Field",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "76 125 109",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "ZungryWare"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
+        "area_name": "Magician's Hideaway",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-5 -55 -22",
+                "facing": "east"
+            }
+        ],
+        "creators": [
+            "128_Nyki",
+            "Tris_"
+        ],
+        "contributors": [
+            "6_Black_Bird_6"
+        ],
+        "description": []
+    },
+    {
+        "area_name": "Bottomside Lighthouse",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-17006 59 10996",
+                "facing": "south"
+            }
+        ],
+        "creators": [
+            "PK_Deer",
+            "Sequex"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
+        "area_name": "Undermines",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-17033 100 10961",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "xKosmic",
+            "Gizmo"
+        ],
+        "contributors": [],
+        "description": []
+    },
+    {
+        "area_name": "Colorless Land",
+        "objective": "",
+        "banners": [
+            {
+                "dimension": "minecraft:overworld",
+                "coordinates": "-16998 156 11056",
+                "facing": "west"
+            }
+        ],
+        "creators": [
+            "BryanWu0403",
+            "bigfrog0102"
+        ],
+        "contributors": [
+            "Kunii",
+            "DoM",
+            "ming79"
+        ],
+        "description": [
+            "A land with the curse of panda...",
+            "Aww it's so cute!"
+        ]
     },
     {
         "area_name": "Basalt Fields",

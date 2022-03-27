@@ -70,26 +70,46 @@ execute in minecraft:overworld positioned 13965 103 -2974 run summon minecraft:v
 execute in minecraft:overworld positioned 13851 94 -2914 run summon minecraft:villager ~-0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;1141353724,74662183,-1100882669,1823211712], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 execute in minecraft:overworld positioned 13851 94 -2914 run summon minecraft:villager ~-0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;85036521,920928299,-1591803326,557039178], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
+# The Inferno Chamber
+execute in minecraft:overworld positioned 13914 97 -2771 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-2136789481,1494959336,-1231103932,523347212], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 13914 97 -2771 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;724569823,546195059,-1403174185,1808769579], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+
 # The Abyssal Prison
-execute in minecraft:the_end positioned -146 37 27 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-2136789481,1494959336,-1231103932,523347212], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:the_end positioned -146 37 27 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;724569823,546195059,-1403174185,1808769579], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:the_end positioned -146 37 27 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;636492449,-1885254741,-1171525850,-949854908], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:the_end positioned -146 37 27 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-216958223,1388137995,-1338431931,2068532628], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # Molten Geysers
-execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;636492449,-1885254741,-1171525850,-949854908], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-216958223,1388137995,-1338431931,2068532628], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-
-# Mine Field
-execute in minecraft:overworld positioned 76 125 109 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-855559109,352207535,-1302207667,2120463111], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:overworld positioned 76 125 109 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;2137267444,-487964423,-1956463617,1136490863], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-855559109,352207535,-1302207667,2120463111], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 50 196 -84 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;2137267444,-487964423,-1956463617,1136490863], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # Prism Caves
 execute in minecraft:overworld positioned -9 121 61 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-1792308575,1140147873,-1885995251,2034112140], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 execute in minecraft:overworld positioned -9 121 61 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-141038369,599540257,-1530366414,-1140370377], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
+# Mine Field
+execute in minecraft:overworld positioned 76 125 109 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-497908597,-242268195,-1414089517,268888358], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 76 125 109 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;901696095,-728216998,-1156796962,1504886102], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+
+# Magician's Hideaway
+execute in minecraft:overworld positioned -5 -55 -22 run summon minecraft:villager ~-0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-234126794,-1656207288,-1969207494,1750318402], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned -5 -55 -22 run summon minecraft:villager ~-0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;942713536,-1296478530,-1687947265,831515749], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+
+# Bottomside Lighthouse
+execute in minecraft:overworld positioned -17006 59 10996 run summon minecraft:villager ~0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-1360538655,462504165,-2138974449,1963342613], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned -17006 59 10996 run summon minecraft:villager ~-0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-1390527675,-663008608,-2008052396,-659067599], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+
+# Undermines
+execute in minecraft:overworld positioned -17033 100 10961 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;1254369404,-1465757942,-1630514054,1412190359], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned -17033 100 10961 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;1017428183,714360066,-1133186142,1386873349], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+
+# Colorless Land
+execute in minecraft:overworld positioned -16998 156 11056 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;1577826880,79513911,-1749272090,-1118913866], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned -16998 156 11056 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;-1256234181,1204506468,-1511109982,1098597198], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+
 # Basalt Fields
-execute in minecraft:overworld positioned 13994 89 -3060 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-497908597,-242268195,-1414089517,268888358], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:overworld positioned 13994 89 -3060 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;901696095,-728216998,-1156796962,1504886102], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 13994 89 -3060 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;501618944,1836793958,-1501320140,570808134], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 13994 89 -3060 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;112302435,1972390972,-1243410267,1536375998], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
 # Crimson Cast
-execute in minecraft:overworld positioned 14088 92 -2757 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-234126794,-1656207288,-1969207494,1750318402], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
-execute in minecraft:overworld positioned 14088 92 -2757 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;942713536,-1296478530,-1687947265,831515749], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 14088 92 -2757 run summon minecraft:villager ~0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-336035551,-477083590,-1353109220,901038033], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
+execute in minecraft:overworld positioned 14088 92 -2757 run summon minecraft:villager ~-0.2 ~-0.9 ~0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-654417919,561662607,-1352670444,2001230583], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
