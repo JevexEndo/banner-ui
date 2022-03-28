@@ -98,7 +98,7 @@ kill 3830aac0-b2b9-4ebe-9b63-f7ff318fec65
 kill aee7d3e1-1b91-40e5-8081-d70f75063b15
 kill ad1e3b45-d87b-4aa0-884f-8d54d8b76d31
 
-# Undermines
+# Angler's Dwelling
 kill 4ac4287c-a8a2-4f0a-9ed0-547a542c5097
 kill 3ca4b8d7-2a94-4502-bc74-f3a252aa0205
 

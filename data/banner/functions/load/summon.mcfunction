@@ -98,7 +98,7 @@ execute in minecraft:overworld positioned -5 -55 -22 run summon minecraft:villag
 execute in minecraft:overworld positioned -17006 59 10996 run summon minecraft:villager ~0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-1360538655,462504165,-2138974449,1963342613], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 execute in minecraft:overworld positioned -17006 59 10996 run summon minecraft:villager ~-0.2 ~-0.9 ~-0.5 {Silent: 1b, Invulnerable: 1b, UUID: [I;-1390527675,-663008608,-2008052396,-659067599], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
-# Undermines
+# Angler's Dwelling
 execute in minecraft:overworld positioned -17033 100 10961 run summon minecraft:villager ~0.5 ~-0.9 ~0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;1254369404,-1465757942,-1630514054,1412190359], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 execute in minecraft:overworld positioned -17033 100 10961 run summon minecraft:villager ~0.5 ~-0.9 ~-0.2 {Silent: 1b, Invulnerable: 1b, UUID: [I;1017428183,714360066,-1133186142,1386873349], NoAI: 1b, CanPickUpLoot: 0b, ActiveEffects: [{Id: 14b, Amplifier: 0b, Duration: 20000000, ShowParticles: 0b}], Offers: {}}
 
