@@ -40,7 +40,10 @@
             "Firestorm"
         ],
         "contributors": [],
-        "description": []
+        "description": [
+            "A dragon gaurds this place from any outside forces,",
+            "it has deemed you worthy for finding its artifacts."
+        ]
     },
     {
         "area_name": "Azalea Ruin",
@@ -254,7 +257,11 @@
         "contributors": [
             "Cafrslayeur"
         ],
-        "description": []
+        "description": [
+            "The regions inhabitants had discovered a curse",
+            "that had frozen over part of the islands,",
+            "opening up a new route to navigate these lands."
+        ]
     },
     {
         "area_name": "Crystal Dust Quarry",
@@ -423,7 +430,11 @@
             "DoM"
         ],
         "contributors": [],
-        "description": []
+        "description": [
+            "Descend into the infernal chamber of the draconian horror,",
+            "but beware, it feasts on the souls of those who enter.",
+            "\\\"Specifically people named Jevex\\\" -DoM"
+        ]
     },
     {
         "area_name": "The Abyssal Prison",
