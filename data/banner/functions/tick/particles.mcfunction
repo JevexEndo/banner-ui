@@ -3,6 +3,7 @@ execute in minecraft:overworld run particle minecraft:glow 15 203 6 0.2 0.5 0.2 
 execute in minecraft:overworld run particle minecraft:glow -47 172 18 0.2 0.5 0.2 0 1 normal
 execute in minecraft:overworld run particle minecraft:glow -79 167 95 0.2 0.5 0.2 0 1 normal
 execute in minecraft:overworld run particle minecraft:glow -123 123 -71 0.2 0.5 0.2 0 1 normal
+execute in minecraft:overworld run particle minecraft:glow 117 119 0 0.2 0.5 0.2 0 1 normal
 execute in minecraft:overworld run particle minecraft:glow -126 122 -57 0.2 0.5 0.2 0 1 normal
 execute in minecraft:overworld run particle minecraft:glow -155 118 -73 0.2 0.5 0.2 0 1 normal
 execute in minecraft:overworld run particle minecraft:glow -73 67 36 0.2 0.5 0.2 0 1 normal
