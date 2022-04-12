@@ -8,3 +8,5 @@ tellraw @s {"text":" "}
 tellraw @s {"text":" "}
 tellraw @s {"text":" "}
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
+
+scoreboard players set $molten_geysers nice_adv 1

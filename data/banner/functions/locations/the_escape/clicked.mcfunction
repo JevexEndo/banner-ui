@@ -7,3 +7,5 @@ tellraw @s {"text":"You've broken from your shackles, but your journey","color":
 tellraw @s {"text":"has just begun. Are you ready?","color":"#FFF4D9","bold":false,"italic":true}
 tellraw @s {"text":" "}
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
+
+scoreboard players set $the_escape nice_adv 1

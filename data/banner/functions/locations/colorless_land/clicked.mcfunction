@@ -8,3 +8,5 @@ tellraw @s {"text":"A land with the curse of panda...","color":"#FFF4D9","bold":
 tellraw @s {"text":"Aww it's so cute!","color":"#FFF4D9","bold":false,"italic":true}
 tellraw @s {"text":" "}
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
+
+scoreboard players set $colourless_land nice_adv 1

@@ -9,6 +9,12 @@
                 "facing": "south"
             }
         ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $the_escape nice_adv 1"
+            }
+        ],
         "creators": [
             "Rodogorgon",
             "Sequex",
@@ -31,6 +37,12 @@
                 "dimension": "minecraft:overworld",
                 "coordinates": "15 203 6",
                 "facing": "north"
+            }
+        ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $monument nice_adv 1"
             }
         ],
         "creators": [
@@ -468,6 +480,12 @@
                 "facing": "north"
             }
         ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $molten_geysers nice_adv 1"
+            }
+        ],
         "creators": [
             "SirTorvic"
         ],
@@ -484,6 +502,12 @@
                 "dimension": "minecraft:overworld",
                 "coordinates": "-9 121 61",
                 "facing": "west"
+            }
+        ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $prism_caves nice_adv 1"
             }
         ],
         "creators": [
@@ -506,6 +530,12 @@
                 "facing": "west"
             }
         ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $mine_field nice_adv 1"
+            }
+        ],
         "creators": [
             "ZungryWare"
         ],
@@ -520,6 +550,12 @@
                 "dimension": "minecraft:overworld",
                 "coordinates": "-5 -55 -22",
                 "facing": "east"
+            }
+        ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $magicians_hideaway nice_adv 1"
             }
         ],
         "creators": [
@@ -541,6 +577,12 @@
                 "facing": "south"
             }
         ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $bottomside_lighthouse nice_adv 1"
+            }
+        ],
         "creators": [
             "PK_Deer",
             "Sequex"
@@ -558,6 +600,12 @@
                 "facing": "west"
             }
         ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $anglers_dwelling nice_adv 1"
+            }
+        ],
         "creators": [
             "xKosmic",
             "Gizmo"
@@ -573,6 +621,12 @@
                 "dimension": "minecraft:overworld",
                 "coordinates": "-16998 156 11056",
                 "facing": "west"
+            }
+        ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $colourless_land nice_adv 1"
             }
         ],
         "creators": [
@@ -599,6 +653,12 @@
                 "facing": "north"
             }
         ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $basalt_fields nice_adv 1"
+            }
+        ],
         "creators": [
             "NotCango",
             "Asometric"
@@ -617,6 +677,12 @@
                 "dimension": "minecraft:overworld",
                 "coordinates": "14088 92 -2757",
                 "facing": "north"
+            }
+        ],
+        "rewards": [
+            {
+                "trigger": "on_click",
+                "command": "scoreboard players set $crimson_cast nice_adv 1"
             }
         ],
         "creators": [

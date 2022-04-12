@@ -8,3 +8,5 @@ tellraw @s {"text":"A dragon gaurds this place from any outside forces,","color"
 tellraw @s {"text":"it has deemed you worthy for finding its artifacts.","color":"#FFF4D9","bold":false,"italic":true}
 tellraw @s {"text":" "}
 tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}
+
+scoreboard players set $monument nice_adv 1

@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 from typing import Optional
 
 from generate.mcuuid import MCUUID
@@ -49,26 +50,38 @@ def particles_mcfunction() -> str:
     )
 
 
-def looking_at_json(file_name: str) -> str:
-    return os.path.join(
+def looking_at_dir() -> str:
+    folder_path = os.path.join(
         os.getcwd(),
         "data",
         "banner",
         "predicates",
         "looking_at",
-        f"{file_name}.json",
     )
+    os.makedirs(folder_path, exist_ok=True)
+
+    return folder_path
 
 
-def teleport_mcfunction(folder_name: str, teleport_id: Optional[int] = None) -> str:
-    file_dir = os.path.join(
+def looking_at_json(file_name: str) -> str:
+    return os.path.join(looking_at_dir(), f"{file_name}.json")
+
+
+def locations_dir() -> str:
+    folder_path = os.path.join(
         os.getcwd(),
         "data",
         "banner",
         "functions",
         "locations",
-        f"{folder_name}",
     )
+    os.makedirs(folder_path, exist_ok=True)
+
+    return folder_path
+
+
+def teleport_mcfunction(folder_name: str, teleport_id: Optional[int] = None) -> str:
+    file_dir = os.path.join(locations_dir(), f"{folder_name}")
     os.makedirs(file_dir, exist_ok=True)
 
     function_name = "teleport{}.mcfunction".format(
@@ -77,32 +90,18 @@ def teleport_mcfunction(folder_name: str, teleport_id: Optional[int] = None) -> 
     return os.path.join(file_dir, function_name)
 
 
-def title_mcfunction(folder_name: str) -> str:
-    file_dir = os.path.join(
-        os.getcwd(),
-        "data",
-        "banner",
-        "functions",
-        "locations",
-        f"{folder_name}",
-    )
+def looking_mcfunction(folder_name: str) -> str:
+    file_dir = os.path.join(locations_dir(), f"{folder_name}")
     os.makedirs(file_dir, exist_ok=True)
 
-    return os.path.join(file_dir, "title.mcfunction")
+    return os.path.join(file_dir, "looking.mcfunction")
 
 
-def tellraw_mcfunction(folder_name: str) -> str:
-    file_dir = os.path.join(
-        os.getcwd(),
-        "data",
-        "banner",
-        "functions",
-        "locations",
-        f"{folder_name}",
-    )
+def clicked_mcfunction(folder_name: str) -> str:
+    file_dir = os.path.join(locations_dir(), f"{folder_name}")
     os.makedirs(file_dir, exist_ok=True)
 
-    return os.path.join(file_dir, "tellraw.mcfunction")
+    return os.path.join(file_dir, "clicked.mcfunction")
 
 
 def looking_at_predicate(uuid_1: str, uuid_2: str) -> str:
@@ -110,6 +109,10 @@ def looking_at_predicate(uuid_1: str, uuid_2: str) -> str:
 
 
 if __name__ == "__main__":
+    # Remove 'locations' and 'looking_at' folders to clean container directories
+    shutil.rmtree(locations_dir())
+    shutil.rmtree(looking_at_dir())
+
     with open("locations.json") as json_file:
         locations = json.load(json_file)
 
@@ -225,14 +228,13 @@ if __name__ == "__main__":
                     )
                 )
 
-        with open(title_mcfunction(file_name), "w") as title_file:
-            title_file.writelines(
+        with open(looking_mcfunction(file_name), "w") as looking_file:
+            looking_file.writelines(
                 [
                     "title @s[scores={bn.title_cooldown=-1}] times 0 5 2\n",
                     'title @s title {"text":""}\n',
                     'title @s subtitle {{"text":"{}","color":"{}","bold":true}}\n'.format(
-                        location["area_name"],
-                        location.get("color", "#ACFFA6")
+                        location["area_name"], location.get("color", "#ACFFA6")
                     ),
                     "execute as @s[scores={{mc.talked_to_villager=1..}}] run function banner:locations/{}/tellraw\n".format(
                         file_name
@@ -241,8 +243,17 @@ if __name__ == "__main__":
                 ]
             )
 
-        with open(tellraw_mcfunction(file_name), "w") as title_file:
-            title_file.writelines(
+            commands = [
+                f"{reward['command']}\n"
+                for reward in location.get("rewards", [])
+                if reward.get("trigger", "") == "looking_at"
+            ]
+            if len(commands) > 0:
+                looking_file.write("\n")
+                looking_file.writelines(commands)
+
+        with open(clicked_mcfunction(file_name), "w") as clicked_file:
+            clicked_file.writelines(
                 [
                     'tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}\n',
                     'tellraw @s {{"text":"{}{}","color":"{}","bold":true,"italic":false}}\n'.format(
@@ -250,7 +261,7 @@ if __name__ == "__main__":
                         " - " + location["objective"]
                         if len(location["objective"]) > 0
                         else "",
-                        location.get("color", "#ACFFA6")
+                        location.get("color", "#ACFFA6"),
                     ),
                     'tellraw @s {"text":" "}\n',
                     'tellraw @s [{{"text":"\\u27a4 Creators: ","color":"#ACFFA6","bold":false,"italic":false}},{{"text":"{}","color":"#FFFFFF","bold":false,"italic":false}}]\n'.format(
@@ -284,6 +295,15 @@ if __name__ == "__main__":
                     'tellraw @s {"text":"------------------------------------------","color":"#ACFFA6","bold":true}\n',
                 ]
             )
+
+            commands = [
+                f"{reward['command']}\n"
+                for reward in location.get("rewards", [])
+                if reward.get("trigger", "") == "on_click"
+            ]
+            if len(commands) > 0:
+                clicked_file.write("\n")
+                clicked_file.writelines(commands)
 
     # Append resummon command to end of resummon function
     with open(resummon_mcfunction(), "a") as summon_file:
